@@ -1,0 +1,294 @@
+################################################
+#                                              #
+#  User Control                                #
+#                                              #
+################################################
+UserDetail:
+  columns:
+    user_id:          integer
+    charge:           double
+    phone:            string(50)
+  relations:
+    sfGuardUser:
+      local:          user_id
+      foreign:        id
+      alias:          User
+      foreignAlias:   Details
+      type:           one
+      foreignType:    one
+    
+  
+################################################
+#                                              #
+#  Phone Book                                  #
+#                                              #
+################################################
+Person:
+  columns:
+    first_name:       string(50)
+    last_name:        string(50)
+    username:         string(50)
+    email:            string(50)
+    phone:            string(50)
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8        
+
+Group:
+  tableName:          groop
+  columns:
+    name:             string(255)
+  relations:
+    People:
+      foreignAlias:   Groups
+      class:          Person
+      refClass:       GroupPerson
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8      
+
+GroupPerson:
+  columns:
+    group_id:
+      type:           integer
+      primary:        true
+    person_id:
+      type:           integer
+      primary:        true
+  relations:
+    Group:
+      foreignAlias:   GroupPeople
+    Person:
+      foreignAlias:   GroupPeople
+
+
+################################################
+#                                              #
+#  SMS Sending                                 #
+#                                              #
+################################################
+Status:
+  columns:
+    name:             string(25)
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8
+      
+
+Sent:
+  columns:
+    sender:           string(25)
+    receiver:         string(25)
+    send_date:        string(25)
+    text:             text
+    status_id:        integer
+  actAs:              [Timestampable]
+  relations:
+    Status:
+      foreignAlias:   Messages
+      type:           one
+      foreignType:    many
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8
+    
+Pattern:
+  columns:
+    text:             string(25)
+    field:            string(25)
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8
+      
+      
+
+################################################
+#                                              #
+#  SMS Receiving Modules                       #
+#                                              #
+################################################
+Responder:
+  columns:
+    name:             string(25)
+    response:         text
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8
+
+Program:
+  columns:
+    name:             string(25)
+    code:             integer
+    start:            timestamp
+    end:              timestamp
+    participants:     string(255)
+    responder_id:     integer
+  relations:
+    Responder:
+      alias:          Responder
+      type:           one
+      foreignType:    many
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8
+    
+ProgramData:
+  columns:
+    person_id:        integer
+  relations:
+    Person:
+      local:          person_id
+      alias:          Person
+      foreign:        id
+      type:           one
+      foreignType:    many
+  actAs:              [Timestampable]
+  
+
+Choice:
+  columns:
+    name:             string(50)
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8
+    
+ContestChoice:
+  inheritance:
+    type:             concrete
+    extends:          Choice
+  columns:
+    contest_id:       integer
+  relations:
+    Contest:
+      type:           one
+      foreignType:    many
+      foreignAlias:   Choices
+      alias:          Contest
+
+Contest:
+  inheritance:
+    type:             concrete
+    extends:          Program
+  columns:
+    winners_count:    integer
+    answer_id:        integer
+    auto_result:      boolean
+    performed:        boolean
+  relations:
+    ContestChoice:
+      local:          answer_id
+      alias:          Answer
+      type:           one
+      foreignType:    one
+      foreignAlias:   AnswerOfContest
+    
+ContestData:
+  inheritance:
+    type:             concrete
+    extends:          ProgramData
+  columns:
+    choice_id:        integer
+  relations:
+    ContestChoice:
+      local:          choice_id
+      alias:          Choice
+      foreign:        id
+      type:           one
+      foreignType:    many
+    
+PollChoice:
+  inheritance:
+    type:             concrete
+    extends:          Choice
+  columns:
+    poll_id:      integer
+  relations:
+    Poll:
+      type:           one
+      foreignType:    many
+      foreignAlias:   Choices
+      alias:          Poll
+
+Poll:
+  inheritance:
+    type:             concrete
+    extends:          Program
+    
+PollData:
+  inheritance:
+    type:             concrete
+    extends:          ProgramData
+  columns:
+    choice_id:        integer
+  relations:
+    PollChoice:
+      local:          choice_id
+      alias:          Choice
+      foreign:        id
+      type:           one
+      foreignType:    many
+
+Register:
+  inheritance:
+    type:             concrete
+    extends:          Program
+  columns:
+    capacity:         integer
+    
+RegisterData:
+  inheritance:
+    type:             concrete
+    extends:          ProgramData
+  columns:
+    register_id:      integer
+  relations:
+    Register:
+      local:          register_id
+      alias:          Register
+      foreign:        id
+      type:           one
+      foreignType:    many
+  
+    
+ElectionChoice:
+  inheritance:
+    type:             concrete
+    extends:          Choice
+  columns:
+    election_id:      integer
+  relations:
+    Election:
+      type:           one
+      foreignType:    many
+      foreignAlias:   Choices
+      alias:          Election
+
+Election:
+  inheritance:
+    type:             concrete
+    extends:          Program
+    
+ElectionData:
+  inheritance:
+    type:             concrete
+    extends:          ProgramData
+  columns:
+    choice_id:        integer
+  relations:
+    ElectionChoice:
+      local:          choice_id
+      alias:          Choice
+      foreign:        id
+      type:           one
+      foreignType:    many
+      
+GlobalSMS:
+  columns:
+    sender:           string(25)
+    text:             text
+    unread:           boolean
+  actAs:              [Timestampable]
+  options:
+    collate: utf8_unicode_ci
+    charset: utf8
+    

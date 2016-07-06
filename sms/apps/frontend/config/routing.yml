@@ -1,0 +1,160 @@
+responder:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Responder
+    module:               respondManaging
+    prefix_path:          /respondManaging
+    column:               id
+    with_wildcard_routes: true
+
+election_data:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ElectionData
+    module:               electionDataManaging
+    prefix_path:          /electionDataManaging
+    column:               id
+    with_wildcard_routes: true
+
+election_choice:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ElectionChoice
+    module:               electionChoiceManaging
+    prefix_path:          /electionChoiceManaging
+    column:               id
+    with_wildcard_routes: true
+
+election:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Election
+    module:               electionManaging
+    prefix_path:          /electionManaging
+    column:               id
+    with_wildcard_routes: true
+
+register_data:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                RegisterData
+    module:               registerDataManaging
+    prefix_path:          /registerDataManaging
+    column:               id
+    with_wildcard_routes: true
+
+register:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Register
+    module:               registerManaging
+    prefix_path:          /registerManaging
+    column:               id
+    with_wildcard_routes: true
+
+poll_data:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PollData
+    module:               pollDataManaging
+    prefix_path:          /pollDataManaging
+    column:               id
+    with_wildcard_routes: true
+
+poll_choice:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PollChoice
+    module:               pollChoiceManaging
+    prefix_path:          /pollChoiceManaging
+    column:               id
+    with_wildcard_routes: true
+
+poll:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Poll
+    module:               pollManaging
+    prefix_path:          /pollManaging
+    column:               id
+    with_wildcard_routes: true
+
+sent:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Sent
+    module:               sentManaging
+    prefix_path:          /sentManaging
+    column:               id
+    with_wildcard_routes: true
+
+person:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Person
+    module:               personManaging
+    prefix_path:          /personManaging
+    column:               id
+    with_wildcard_routes: true
+
+group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Group
+    module:               groupsManaging
+    prefix_path:          /groupsManaging
+    column:               id
+    with_wildcard_routes: true
+
+#Contest Module
+contest_results:
+  url: /contest/results/:id
+  requirements: {id: \d+}
+  param: {module: contest, action: results}
+  
+contest_perform:
+  url: /contest/perform/:id
+  requirements: {id: \d+}
+  param: {module: contest, action: perform}
+
+#Global Module
+global_inbox:
+  url: /global/inbox
+  param: {module: global, action: index}
+ 
+global_view:
+  url: /global/view/:id
+  requirements: {id: \d+}
+  param: {module: global, action: view}
+  
+global_search:
+  url: /global/search
+  param: {module: global, action: search}
+ 
+
+#home page
+homepage:
+  url:   /
+  param: { module: settings, action: index }
+
+#sfGuard User Control
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+
+# debug generic rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

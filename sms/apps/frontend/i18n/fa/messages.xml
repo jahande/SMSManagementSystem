@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="fa" datatype="plaintext" original="messages" date="2011-02-03T16:20:32Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Signin</source>
+        <target>ورود</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>may</source>
+        <target>شاید</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Signidasdn</source>
+        <target>ورود</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Username or E-Mail</source>
+        <target>نام کاربری</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Password</source>
+        <target>رمز</target>
+      </trans-unit>
+	  <trans-unit id="7">
+        <source>Remember</source>
+        <target>به یاد داشته باش</target>
+      </trans-unit>
+	  <trans-unit id="8">
+        <source>Door</source>
+        <target>درب</target>
+      </trans-unit>
+	  <trans-unit id="9">
+        <source>Occur at</source>
+        <target>زمان</target>
+      </trans-unit>
+	  <trans-unit id="10">
+        <source>Action</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="11">
+        <source>Car number</source>
+        <target>شماره ی خودرو</target>
+      </trans-unit>
+	  <trans-unit id="12">
+        <source>is empty</source>
+        <target>خالی باشد</target>
+      </trans-unit>
+	  <trans-unit id="13">
+        <source>AGOrganizeLogs List</source>
+        <target>مدیریت گزارش ها</target>
+      </trans-unit>
+	  <trans-unit id="14">
+        <source>from</source>
+        <target>از</target>
+      </trans-unit>
+	  <trans-unit id="15">
+        <source>to</source>
+        <target>تا</target>
+      </trans-unit>
+	  <trans-unit id="16">
+        <source>Exit log</source>
+        <target>شماره ی گزارش خروج</target>
+      </trans-unit>
+	  <trans-unit id="17">
+        <source>Amount</source>
+        <target>پرداختی</target>
+      </trans-unit>
+	  <trans-unit id="18">
+        <source>BillsReport List</source>
+        <target>فهرست درآمدها</target>
+      </trans-unit>
+	  <trans-unit id="19">
+        <source>yes</source>
+        <target>آری</target>
+      </trans-unit>
+	  <trans-unit id="20">
+        <source>no</source>
+        <target>خیر</target>
+      </trans-unit>
+	  <trans-unit id="21">
+        <source>yes or no</source>
+        <target>آری یا خیر</target>
+      </trans-unit>
+	  <trans-unit id="22">
+        <source>Last login</source>
+        <target>آخرین ورود به سیستم</target>
+      </trans-unit>
+	  <trans-unit id="23">
+        <source>Updated at</source>
+        <target>به روز شده در</target>
+      </trans-unit>
+	  <trans-unit id="24">
+        <source>Created at</source>
+        <target>ساخته شده در</target>
+      </trans-unit>
+	  <trans-unit id="25">
+        <source>OrganizeCars List</source>
+        <target>مدیریت خودروها</target>
+      </trans-unit>
+	  <trans-unit id="26">
+        <source>Calculation type</source>
+        <target>نام فرمول محاسبه</target>
+      </trans-unit>
+	  <trans-unit id="27">
+        <source>State</source>
+        <target>وضعیت</target>
+      </trans-unit>
+	  <trans-unit id="28">
+        <source>New OrganizeCars</source>
+        <target>افزودن خودرو به لیست</target>
+      </trans-unit>
+	  <trans-unit id="29">
+        <source>Edit OrganizeCars</source>
+        <target>تغییر مشخصات خودرو</target>
+      </trans-unit>
+	  <trans-unit id="30">
+        <source>First name</source>
+        <target>نام</target>
+      </trans-unit>
+	  <trans-unit id="31">
+        <source>Last name</source>
+        <target>نام خانوادگی</target>
+      </trans-unit>
+	  <trans-unit id="32">
+        <source>Email address</source>
+        <target>رایانامه</target>
+      </trans-unit>
+	  <trans-unit id="33">
+        <source>Username</source>
+        <target>نام کاربری</target>
+      </trans-unit>
+	  
+	  <trans-unit id="34">
+        <source>Password (again)</source>
+        <target>رمز(دوباره)</target>
+      </trans-unit>
+
+	  <trans-unit id="35">
+        <source>Oops! The page you asked for is secure and you do not have proper credentials.</source>
+        <target>شما اجازه ی دسترسی به این صفحه را ندارید.</target>
+      </trans-unit>
+	  <trans-unit id="36">
+        <source>Login below to gain access</source>
+        <target>برای تلاش مجدد نام کاربری و رمز خود را دوباره وارد کنید.</target>
+      </trans-unit>
+	  <trans-unit id="37">
+        <source>The username and/or password is invalid.</source>
+        <target>شما نام کاربری و یا رمز را اشتباه وارد کردید.</target>
+      </trans-unit>
+	  <trans-unit id="38">
+        <source>Required.</source>
+        <target>این قسمت تکمیل نشده است.</target>
+      </trans-unit>
+	  <trans-unit id="39">
+        <source>User</source>
+        <target>کاربر</target>
+      </trans-unit>
+	  <trans-unit id="40">
+        <source>Per hour</source>
+        <target>به ازای هر ساعت</target>
+      </trans-unit>
+	  <trans-unit id="41">
+        <source>First enter</source>
+        <target>ورودی</target>
+      </trans-unit>
+	  <trans-unit id="42">
+        <source>OrganizeFormules List</source>
+        <target>مدیریت فرمول های محاسباتی</target>
+      </trans-unit>
+	  <trans-unit id="43">
+        <source>Operator id</source>
+        <target>شماره ی شناسایی اپراتور</target>
+      </trans-unit>
+	  <trans-unit id="44">
+        <source>UserShowLogs List</source>
+        <target>مدیریت ساعات کاری کاربران</target>
+      </trans-unit>
+	  <trans-unit id="45">
+        <source>New UserShowLogs</source>
+        <target>اضافه کردن</target>
+      </trans-unit>
+	  <trans-unit id="46">
+        <source>Edit UserShowLogs</source>
+        <target>تغییر ساعات کاری کاربران</target>
+      </trans-unit>
+	  <trans-unit id="47">
+        <source>User list</source>
+        <target>فهرست کاربران</target>
+      </trans-unit>
+	 
+	  <trans-unit id="48">
+        <source>New User</source>
+        <target>افزودن کاربر</target>
+      </trans-unit>
+	  <trans-unit id="49">
+        <source>Permissions and groups</source>
+        <target>سطوح دسترسی کاربران و گروه ها</target>
+      </trans-unit>
+	  <trans-unit id="50">
+        <source>Permission list</source>
+        <target>فهرست دسترسی ها</target>
+      </trans-unit>
+	  <trans-unit id="51">
+        <source>Description	</source>
+        <target>توضیحات</target>
+      </trans-unit>
+	  <trans-unit id="52">
+        <source>Name</source>
+        <target>نام</target>
+      </trans-unit>
+	  <trans-unit id="53">
+        <source>Permissions list</source>
+        <target>فهرست سطوح دسترسی</target>
+      </trans-unit>
+	  <trans-unit id="54">
+        <source>Users list</source>
+        <target>فهرست کاربران</target>
+      </trans-unit>
+	  <trans-unit id="55">
+        <source>Operator</source>
+        <target>اپراتور</target>
+      </trans-unit>
+	  <trans-unit id="56">
+        <source>New OrganizeFormules</source>
+        <target>افزودن فرمول محاسباتی جدید</target>
+      </trans-unit>
+	  <trans-unit id="57">
+        <source>Edit OrganizeFormules</source>
+        <target>ویرایش فرمول محاسباتی </target>
+      </trans-unit>
+	   <trans-unit id="58">
+        <source>Id</source>
+        <target>شماره ی ردیف</target>
+      </trans-unit>
+	   <trans-unit id="59">
+        <source>From</source>
+        <target>از</target>
+      </trans-unit>
+	   <trans-unit id="60">
+        <source>Description</source>
+        <target>توضیح</target>
+      </trans-unit>
+	   <trans-unit id="61">
+        <source>Oops! The page you asked for is secure and you do not have proper credentials.</source>
+        <target>شما به این ص</target>
+      </trans-unit>
+	   <trans-unit id="62">
+        <source>UserShowLog List</source>
+        <target>لیست فعالیت کاربران</target>
+      </trans-unit>
+	   <trans-unit id="63">
+        <source>Card number</source>
+        <target>شماره ی کارت</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Card type</source>
+        <target>نوع کارت</target>
+      </trans-unit>
+	   <trans-unit id="64">
+        <source>Car id</source>
+        <target>شناسه ی خودرو</target>
+      </trans-unit>
+	   <trans-unit id="65">
+        <source>Action type as string</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	   <trans-unit id="66">
+        <source>Car</source>
+        <target>خودرو</target>
+      </trans-unit>
+	   <trans-unit id="67">
+        <source>Action as string</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="68">
+        <source>Calculation type name as string</source>
+        <target>نوع فرمول محاسبه</target>
+      </trans-unit>
+	  <trans-unit id="69">
+        <source>State as string</source>
+        <target>وضعیت</target>
+      </trans-unit>
+	  <trans-unit id="70">
+        <source>1</source>
+        <target>&#1776;</target>
+      </trans-unit>
+	  <trans-unit id="71">
+        <source>Farsi occur at</source>
+        <target>تاریخ</target>
+      </trans-unit>
+	  <trans-unit id="72">
+        <source>2</source>
+        <target>&#1777;</target>
+      </trans-unit>
+	  <trans-unit id="73">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="74">
+        <source>Username as string</source>
+        <target>نام کاربری</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Car Number</source>
+        <target>شماره ی ماشین</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Car number</source>
+        <target>ماره ی ماشین</target>
+      </trans-unit>
+	  <trans-unit id="75">
+        <source>Click button to export the phone numbers.</source>
+        <target>برای دریافت شماره ی تلفن های یک گروه ، یا همه؛ بعد از تکمیل فرم
+دکمه ی دریافت فایل را بزنید.</target>
+      </trans-unit>
+	  
+	  <trans-unit id="34">
+        <source>All groups</source>
+        <target>همه ی گروه ها</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>export</source>
+        <target>نمایش شماره تلفن ها در قالب فایل</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Person Managing</source>
+        <target>مدیریت کاربران</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Groups Managing</source>
+        <target>مدیریت گروه ها</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Sent Massage Managingt</source>
+        <target>مدیریت پیامک های ارسال شده</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Poll Managing</source>
+        <target>مدیریت نظرسنجی</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Poll Data Managing</source>
+        <target>مدیریت پیام های رسیده به نظرسنجی ها</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Poll Choice Managing</source>
+        <target>مدیریت گزینه های نظرسنجی</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Add Poll Choice</source>
+        <target>افزودن گزینه به نظرسنجی</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Groups Managing</source>
+        <target>مدیریت گروه ها</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Groups Managing</source>
+        <target>مدیریت گروه ها</target>
+      </trans-unit>
+	   <trans-unit id="34">
+        <source>Groups Managing</source>
+        <target>مدیریت گروه ها</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Registration name:</source>
+        <target>نام برنامه</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Select The registration name that you want:</source>
+        <target>نام برنامه را انتخاب کنید:</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Language</source>
+        <target>زبان</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Election Managing </source>
+        <target>مدیریت انتخابات</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Election Data Managing</source>
+        <target>مدیریت داده های انتخابات</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>messages.xml</source>
+        <target>تنظیمات</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Home</source>
+        <target>خانه</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Phone book</source>
+        <target>دفترچه تلفن</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Contest</source>
+        <target>مسابقه</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Poll</source>
+        <target>نظرسنجی</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Election</source>
+        <target>انتخابات</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Registration</source>
+        <target>ثبت نام</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Others recieved SMS's</source>
+        <target>پیامک های متفرقه ی رسیده</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>About us</source>
+        <target>درباره ی ما</target>
+      </trans-unit>
+	  
+	  <trans-unit id="34">
+        <source>Sent Massage Managing</source>
+        <target>مدیریت پیام های فرستاده شده</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Responder Managing</source>
+        <target>مدیریت پاسخگوی خودکار</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Settings</source>
+        <target>تنظیمات</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Virtual sender</source>
+        <target>فرستنده ی مجازی</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Contact</source>
+        <target>تماس</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>SMS Organaize System</source>
+        <target>سامانه ی مدیریت پیامک</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>New Contest</source>
+        <target>ایجاد مسابقه ی جدید</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Register Managing</source>
+        <target>مدیریت برنامه ها</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>Show others SMS's</source>
+        <target>نمایش پیام های متفرقه</target>
+      </trans-unit><trans-unit id="34">
+        <source>writed by Hosein Heidari, Ruholla Jahande, Amirali Akbari</source>
+        <target>نوشته شده به وسیله ی امیرعلی اکبری ، روح الله جهنده ، حسین حیدری</target>
+      </trans-unit>
+	  
+	  <trans-unit id="34">
+        <source>PollManaging List</source>
+        <target>لیست نظرسنجی ها</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  
+	  <trans-unit id="34">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  <trans-unit id="34">
+        <source>UserShowLog List</source>
+        <target>نوع عمل</target>
+      </trans-unit>
+	  
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,28 @@
+<?php
+class SMS{
+	private static function _send($number, $text){
+		if (strpos($number, '0')===0)
+			$number = "+98".substr($number, 1);
+		$url = "http://127.0.0.1:9000/Send%20Text%20Message.htm?Submit=Submit".
+				"&Text=".urlencode($text).
+				"&PhoneNumber".urlencode($number);
+		$c = new curlHandler($url);
+		$result = $c->execute();
+		//TODO calculate cost
+		return true; //TODO verify send using $result
+	}
+	
+	public static function send($pql, $text){
+		foreach ($pql['phones'] as $phone){
+			SMS::_send($phone, Parser::process($text));
+		}
+		foreach ($pql['people'] as $p){
+			SMS::_send($p->phone, Parser::process($text, $p));
+		}
+		foreach ($pql['groups'] as $g){
+			foreach ($g->People as $p)
+				SMS::_send($p->phone, Parser::process($text, $p));
+		}
+	}
+	
+}

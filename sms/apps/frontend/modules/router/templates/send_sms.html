@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Send SMS</title>
+<script type='text/javascript' src='js/jquery.js'></script>
+
+<script type='text/javascript' >
+ 
+ function sendSMS()
+ {
+	 $('#result').html("<img  src='images/loading.gif' />");
+	 var rec_addr=$("input#recaddr").val();
+	 var from = $("input#from_tel").val();  
+	 var msg = $("textarea#msg").val();  
+	 var dataString = 'from='+ from + '&subject=' + msg;  
+ 	 $.ajax({  
+		   type: "GET",  
+		   url: rec_addr,  
+		   data: dataString,  
+		   success: function(data) 
+		   		{ 
+			   		  $('#result').html("پیام با موفقیت از جانب"+from+" ارسال شد")
+				     .hide()  
+					 .fadeIn(1500, function() 
+						{  
+				      		$('#result').append("<img id='checkmark' src='images/check.gif' />");  
+						});  
+		  		}  
+		});
+}
+
+</script>
+</head>
+<style>
+*{
+font-family: tahoma;
+}
+</style>
+<body>
+<center>
+<h1>
+ارسال پیام
+</h1>
+</center>
+<center>
+<table border=0>
+	<tr style="direction:rtl;">
+		<td>آدرس دریافت</td>
+		<td><input type='text' style="direction:ltr;" id='recaddr' name='address' value='localhost/sms/lib/recvsms.php'/></td>
+	</tr>
+	
+	<tr style="direction:rtl;background-color:rgb(222,235,245);">
+		<td style="direction:rtl;">به</td>
+		<td><input type='text' name='to' value='مهم نیست'/></td>
+	</tr>
+	<tr style="direction:rtl;">
+		<td>از</td>
+		<td><input type='text' style="direction:ltr;" id='from_tel' name='from' value='+989122080031'/></td>
+	</tr>
+	<tr style="direction:rtl;background-color:rgb(222,235,245);">
+		<td>متن پیام</td>
+		<td><textarea  name='subject' id='msg'>سلام</textarea></td>
+	</tr>
+	<tr style="direction:rtl;">
+		<td></td>
+		<td></td>
+	</tr>			
+	<tr style="direction:rtl;">
+		<td></td>
+		<td><input onClick='sendSMS()' type='submit' value='بفرست'/></td>
+	</tr>	
+	<tr style="direction:rtl;">
+		<td colspan=2 id="result"></td>
+		
+	</tr>	
+</table>
+</center>
+</body>
+</html>

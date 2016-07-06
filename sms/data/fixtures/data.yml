@@ -1,0 +1,73 @@
+Group:
+  Group_1:
+    name: 'New Group'
+  Group_2:
+    name: 'New Group 2'
+  Group_3:
+    name: 'New Group 3'
+ContestData:
+  ContestData_2:
+    Person: Person_1
+    Choice: ContestChoice_3
+    created_at: '2011-02-07 17:06:55'
+    updated_at: '2011-02-07 17:06:59'
+  ContestData_3:
+    Person: Person_3
+    Choice: ContestChoice_3
+    created_at: '2011-02-07 17:07:29'
+    updated_at: '2011-02-07 17:07:31'
+Contest:
+  Contest_3:
+    name: C1
+    code: '2'
+    start: '2011-01-01 00:00:00'
+    end: '2011-01-31 23:59:00'
+    participants: '.New Group'
+    Responder: Responder_2
+    winners_count: '3'
+    Answer: ContestChoice_3
+    auto_result: true
+    performed: null
+Responder:
+  Responder_1:
+    name: 'Notice For C1 Winners'
+    response: 'Barande Shodid!'
+  Responder_2:
+    name: 'Notice For C1 Winners'
+    response: 'Barande Shodid!'
+Person:
+  Person_1:
+    first_name: 'Amir Ali'
+    last_name: Akbari
+    username: null
+    email: amiraliakbari@gmail.com
+    phone: '09151022395'
+  Person_2:
+    first_name: Ali
+    last_name: Mashreghi
+    username: am
+    email: ali@gmail.com
+    phone: '09151022396'
+  Person_3:
+    first_name: Alireza
+    last_name: Radmanesh
+    username: seyyed
+    email: a.radmanesh@gmail.com
+    phone: '09151022397'
+GroupPerson:
+  GroupPerson_1_1:
+    Group: Group_1
+    Person: Person_1
+  GroupPerson_2_2:
+    Group: Group_2
+    Person: Person_2
+  GroupPerson_1_3:
+    Group: Group_1
+    Person: Person_3
+ContestChoice:
+  ContestChoice_2:
+    name: Mashhad
+    Contest: Contest_3
+  ContestChoice_3:
+    name: Tehran
+    Contest: Contest_3

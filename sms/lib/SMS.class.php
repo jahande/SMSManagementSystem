@@ -1,0 +1,42 @@
+<?php
+class SMS{
+	private static function _send($number, $text){
+		if (strpos($number, '0')===0)
+			$number = "+98".substr($number, 1);
+	$fh = fopen("/log/sms_log.txt", 'a');
+		fwrite($fh, "SMS sent to $number (".substr($text, 0, 5).")\n");
+		fclose($fh);
+			
+		$url = "http://127.0.0.30/Send%20Text%20Message.htm?Submit=Submit".
+				"&Text=".urlencode($text).
+				"&PhoneNumber".urlencode($number);
+		$c = new curlHandler($url);
+		//$result = $c->execute();
+		//TODO calculate cost
+		return true; //TODO verify send using $result
+	}
+	
+	public static function send($pql, $text){
+		$sent = array();
+		foreach ($pql->data['phones'] as $phone){
+			if (array_search($phone, $sent)!==false) continue;
+			$sent[] = $phone;
+			SMS::_send($phone, Parser::process($text));
+		}
+		foreach ($pql->data['people'] as $p){
+			$phone = $p->phone;
+			if (array_search($phone, $sent)!==false) continue;
+			$sent[] = $phone;
+			SMS::_send($phone, Parser::process($text, $p));
+		}
+		foreach ($pql->data['groups'] as $g){
+			foreach ($g->People as $p){
+				$phone = $p->phone;
+				if (array_search($phone, $sent)!==false) continue;
+				$sent[] = $phone;
+				SMS::_send($phone, Parser::process($text, $p));
+			}
+		}
+	}
+	
+}

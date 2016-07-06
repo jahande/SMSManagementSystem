@@ -1,0 +1,21 @@
+/* Common Formatting */
+
+.Center{
+	text-align: center;
+}
+
+#content {
+    padding: 3%;
+    position: absolute;
+    left: 20%;
+    width: 55%;
+    border: groove;
+}
+
+#navigation {
+    position: absolute;
+    right: 3%;
+    width: 15%;
+    top: 4%;
+    border: groove;
+}
